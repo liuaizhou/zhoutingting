@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>游戏大厅</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="bg">
+<!--首页音乐-->
+<audio autoplay="autoplay" loop="loop" id="audio">
+    <source src="music/index/GameSound.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+<div class="wrap">
+    <div class="header">
+        <div class="header_left">
+            <div class="flex">
+                <img src="images/avatar.png" class="user">
+                <span class="userId">00001</span>
+                <div class="vip">
+                    <img src="images/syvip.png" alt="">
+                    <img src="images/syhy02.png" alt="">
+                    <img src="images/btn_store1_normal.png" class="car" id="upgroup">
+                </div>
+                <div class="panel">
+                    <img src="images/panel_card.png" class="card">
+                    <img src="images/btn_store1_normal.png" class="car" id="buy">
+                </div>
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="sign"></div>
+            <img src="images/btn_activity_normal.png" id="activity">
+            <img src="images/btn_service_normal.png" id="service">
+            <img src="images/btn_task_normal.png" class="task">
+        </div>
+    </div>
+    <div class="boss">
+        <img src="images/bos.png" class="toggle">
+        <p class="notice">公告：<marquee class="marquee">老板场火热开场啦！</marquee></p>
+    </div>
+    <div class="content">
+        <ul id="list">
+            <li>
+                <img src="images/hz.png" alt="">
+            </li>
+            <li>
+                <img src="images/gd.png" alt="">
+            </li>
+            <li>
+                <img src="images/cs.png" alt="">
+            </li>
+            <li>
+                <img src="images/sc.png" alt="">
+            </li>
+            <li>
+                <img src="images/hn.png" alt="">
+            </li>
+            <li>
+                <img src="images/pp.png" alt="">
+            </li>
+        </ul>
+    </div>
+</div>
+<!--遮罩层-->
+<div class="dialog"></div>
+<!--活动-->
+<div class="mask activity">
+    <img src="images/close.png" class="close">
+
+</div>
+<!--客服-->
+<div class="mask service">
+    <img src="images/close.png" class="close">
+
+</div>
+<!--任务中心-->
+<div class="mask task_bg">
+    <img src="images/close.png" class="close">
+    <ul class="pic_list">
+        <li>
+            <a href="#" class="yue">
+                <img src="images/1515_05.png" alt="">
+            </a>
+        </li>
+        <li>
+            <img src="images/1515_03.png" alt="">
+            <input type="file" accept="image/*" multiple class="pic">
+        </li>
+        <li id="mobile">
+            <img src="images/1515.png" alt="">
+        </li>
+        <li id="request">
+            <a href="#" class="requt">
+                <img src="images/1515_02.png" alt="">
+            </a>
+        </li>
+        <li class="last_li">
+            <a href="#" class="qun">
+                <img src="images/1515_01.png" alt="">
+            </a>
+        </li>
+    </ul>
+</div>
+<!--场次选择-->
+<div class="mask togg">
+    <img src="images/close.png" class="close">
+    <ul class="pic_list">
+        <li>
+            <img src="images/pppp.png" alt="">
+
+        </li>
+        <li>
+            <img src="images/thhh.png" alt="">
+        </li>
+        <li >
+            <img src="images/bos.png" alt="">
+        </li>
+        <li>
+            <img src="images/ggg.png" alt="">
+        </li>
+    </ul>
+</div>
+<!--房卡-->
+<div class="mask fang_bg">
+    <ul class="ff_list">
+        <li>
+            <img src="images/Lobby_Images_Store_img_card_1.png" class="first">
+            <span class="fangCard">房卡10张</span>
+            <span class="fMoney">30元</span>
+            <input type="radio" name="ff" class="radio" checked>
+        </li>
+        <li>
+            <img src="images/Lobby_Images_Store_img_card_2.png" alt="">
+            <span class="fangCard">房卡30张</span>
+            <span class="fMoney">30元</span>
+            <input type="radio" name="ff" class="radio">
+        </li>
+        <li>
+            <img src="images/Lobby_Images_Store_img_card_3.png" alt="">
+            <span class="fangCard">房卡50张</span>
+            <span class="fMoney">30元</span>
+            <input type="radio" name="ff" class="radio">
+        </li>
+        <li class="last_li">
+            <img src="images/btn_sure_normal.png" class="confirm">
+        </li>
+    </ul>
+</div>
+<!--创建用户-->
+<div class="mask new">
+    <p class="invite">键入邀请人ID</p>
+    <ul class="invite_list">
+        <li>
+            <img src="images/ghh.png" alt="">
+            <span class="invite_title">（公会）</span>
+            <input type="number" placeholder="ID" class="text_id">
+        </li>
+        <li>
+            <img src="images/qqq.png" alt="">
+            <span class="invite_title">（群主）</span>
+            <input type="number" placeholder="ID" class="text_id">
+        </li>
+        <li class="last_li">
+            <img src="images/btn_login_normal.png" class="confirm">
+        </li>
+    </ul>
+
+</div>
+<!--会员升级-->
+<div class="mask member">
+    <p class="tips">(会员等级联系客服24小时在线随时随地可退至平民等级)</p>
+    <ul class="member_list">
+        <li>
+            <img src="images/lb.png" alt="">
+            <input type="radio" name="title" class="radio">
+        </li>
+        <li>
+            <img src="images/gz.png" alt="">
+            <input type="radio" name="title" class="radio">
+        </li>
+        <li>
+            <img src="images/th.png" alt="">
+            <input type="radio" name="title" class="radio">
+        </li>
+        <li class="last_li clearfix">
+            <img src="images/btn_sure_normal.png" class="confirm">
+        </li>
+    </ul>
+
+</div>
+<!--匹配-->
+<div class="mask marry">
+    <img src="images/close.png" class="close">
+    <div class="game_name">
+        <img src="images/hz.png" alt="">
+    </div>
+    <div class="game_num">
+        <div>老板场</div>
+        <div>1:1</div>
+    </div>
+    <div class="avatar">
+        <img src="images/avatar.png" alt="">
+        <img src="images/avatar.png" alt="">
+        <img src="images/avatar.png" alt="">
+        <img src="images/avatar.png" alt="">
+    </div>
+</div>
+<!--绑定手机号-->
+<div class="mask mob">
+    <img src="images/close.png" class="close">
+    <input type="number" class="mobile">
+    <img src="images/btn_sure_normal.png" class="confirm sure">
+</div>
+<!--按钮音乐-->
+<audio id="bgMusic" src="music/btn/ClickButton.mp3"></audio>
+<!--匹配成功音乐-->
+<audio id="sucMusic" src="music/success/start.mp3"></audio>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+    $(function () {
+
+        var music = document.getElementById("bgMusic");
+        var sucMusic = document.getElementById("sucMusic");
+        var audio = document.getElementById("audio");
+        audio.play();
+        $('.close').click(function () {
+            $('.dialog').hide();
+            $('.mask').hide();
+            music.play();
+        });
+        //签到
+        $('.sign').click(function () {
+            $(this).addClass('sigin');
+            music.play();
+
+        });
+        $('.task').click(function () {
+            $('.dialog').show();
+            $('.task_bg').show();
+            music.play();
+        });
+        $('#mobile').click(function () {
+            $('.mob').show();
+            music.play();
+        });
+
+        $('#list li').click(function () {
+            $('.dialog').show();
+            $('.marry').show();
+            music.play();
+        });
+        $('#buy').click(function () {
+            $('.dialog').show();
+            $('.fang_bg').show();
+            music.play();
+        });
+        $('.confirm').click(function () {
+            music.play();
+        });
+        $('.radio').click(function () {
+            music.play();
+        });
+        $('#upgroup').click(function () {
+            $('.dialog').show();
+            $('.member').show();
+            music.play();
+        });
+        $('.pic_list li').click(function () {
+            music.play();
+        });
+        $('#activity').click(function () {
+            $('.dialog').show();
+            $('.activity').show();
+            music.play();
+        });
+        $('#service').click(function () {
+            $('.dialog').show();
+            $('.service').show();
+            music.play();
+        });
+        $('.requt').click(function () {
+            music.play();
+            setInterval(requt,500);
+        });
+        function requt(){
+            window.location.href="invitation.html";
+        }
+        $('.yue').click(function () {
+            music.play();
+            setInterval(requts,500);
+        });
+        function requts(){
+            window.location.href="chat.html";
+        }
+        $('.qun').click(function () {
+            music.play();
+            setInterval(requte,500);
+        });
+        function requte(){
+            window.location.href="GroupHolder.html";
+        }
+        $('.toggle').click(function(){
+            music.play();
+            $('.dialog').show();
+            $('.togg').show();
+        })
+
+    })
+</script>
+</body>
+</html>

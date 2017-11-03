@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>群主管理</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="background: #f5e3cf;">
+<div class="wrap">
+    <div class="head">
+        <div class="back">
+            <a href="javascript:;" class="relBtn"></a>
+        </div>
+        <div class="head_title">群主管理</div>
+        <div class="num">人数：88人</div>
+    </div>
+    <div class="group_bg">
+        <img src="images/yy.png" alt="">
+        <p class="group_id">00012</p>
+    </div>
+    <div class="gains">
+        <div class="gr_title"><p>收益明细</p></div>
+        <ul class="list">
+            <div class="list_head">
+                <span class="id">ID</span>
+                <span class="record">记录值</span>
+                <span class="gain">收益</span>
+            </div>
+            <li>
+                <p class="id id_card">ID0001<span class="name">张三</span></p>
+                <p class="record info">时间：11月11日充值房卡10张</p>
+                <p class="gain name">30元</p>
+            </li>
+            <li>
+                <p class="id id_card">ID0001<span class="name">张三</span></p>
+                <p class="record info">时间：11月11日充值房卡10张</p>
+                <p class="gain name">30元</p>
+            </li>
+            <li>
+                <p class="id id_card">ID0001<span class="name">张三</span></p>
+                <p class="record info">时间：11月11日充值房卡10张</p>
+                <p class="gain name">30元</p>
+            </li>
+            <li>
+                <p class="id id_card">ID0001<span class="name">张三</span></p>
+                <p class="record info">时间：11月11日充值房卡10张</p>
+                <p class="gain name">30元</p>
+            </li>
+        </ul>
+    </div>
+    <div class="con">
+        <p>余额：<em>88</em>元<span>(提现时间每周二8:30至6:30)</span> <a href="#" class="cash"></a></p>
+    </div>
+    <div class="gains">
+        <div class="gr_title"><p>提现明细</p></div>
+        <ul class="list">
+            <div class="list_head">
+                <span class="id">日期</span>
+                <span class="record">时间</span>
+                <span class="gain">金额</span>
+            </div>
+            <li>
+                <p class="id id_card">10月26日</p>
+                <p class="record info">14:30:02</p>
+                <p class="gain name">30元</p>
+            </li>
+            <li>
+                <p class="id id_card">10月26日</p>
+                <p class="record info">14:30:02</p>
+                <p class="gain name">30元</p>
+            </li>
+            <li>
+                <p class="id id_card">10月26日</p>
+                <p class="record info">14:30:02</p>
+                <p class="gain name">30元</p>
+            </li>
+            <li>
+                <p class="id id_card">10月26日</p>
+                <p class="record info">14:30:02</p>
+                <p class="gain name">30元</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--按钮音乐-->
+<audio id="bgMusic" src="music/btn/ClickButton.mp3"></audio>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+    $(function(){
+        var music = document.getElementById("bgMusic");
+        $('.relBtn').click(function(){
+            music.play();
+            setInterval(back,200);
+        });
+        function back(){
+            window.history.go(-1);
+        }
+        $('.group_bg').click(function(){
+            music.play();
+            setInterval(requt,200);
+        });
+        function requt(){
+            window.location.href="group.html";
+        }
+        $('.cash').click(function(){
+            music.play();
+        })
+    })
+</script>
+</body>
+</html>

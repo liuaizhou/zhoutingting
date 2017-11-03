@@ -1,0 +1,184 @@
+@charset "utf-8";
+body,html{width: 100%;height: 100%;font-size: 12px;font-family:黑体-简,STHeiti,华文细黑,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",MingLiu,Arial, Helvetica, sans-serif}
+body{background: #f4f8f9;}
+.clearfix:after,.clearfix:before { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
+.clear { clear:both; }
+.fr{float: right}
+.fl{float: left}
+a{text-decoration: none;}
+.wrap{width: 100%;max-width: 768px;margin: 0 auto;overflow: hidden;}
+.bg{width: 100%;height: 100%;background: url("../images/bg.jpg")no-repeat center center;background-size: 100% 100%}
+.header{height: 60px;padding-top: 10px;background: rgba(0,0,0,0.8);width: 100%;border-bottom: 1px solid #cea19e;display: flex;}
+.header_left,.header_right{flex:1;text-align: right}
+.header_right{margin-right: 10px;line-height: 80px;}
+.header_right img{width: 40px;}
+.vip img,.panel img{width: 30px}
+img.card{width: 70px;}
+img.car{width: 20px;}
+.boss{position: relative;width: 100%}
+.boss img{width: 120px;}
+.content{margin-top: 65px;}
+.content ul li{float: left;width: 50%;text-align: center;margin:20px 0;}
+.content ul li img{width: 100px;}
+
+.chat_header{width: 100%;height: 300px;background: url("../images/chat.png")no-repeat;background-size: 100% auto;position: relative}
+.game_name img{width: 20%;position: absolute;left:10px;top:40px;}
+.game_num{position: absolute;color:#fff;font-size: 18px;top:130px;text-align: center;width: 90px;}
+.avatar{position: absolute;left: 100px;top:60px;}
+.title{position: absolute;bottom:13%;text-align:center;width:97%;left: 10px;}
+.avatar img{width: 50px;}
+.title ul li{float: left;margin: 0 6%;}
+.title ul li img{width: 45px;}
+.task_text{background: #fff;border-radius: 5px;width: 100px;display: inline-block;text-align: center;padding: 5px;}
+.other_avatar{width: 40px;border-radius: 50%;vertical-align: top}
+.other{text-align: left;margin-left: 10px;}
+.us{text-align: right;margin-right: 10px;margin-top: 10px;}
+.foot{position: fixed;bottom: 0;width: 100%;left: 0;background: #fff;height:70px;}
+.text{width: 80%;display: inline-block;padding-left: 20px;}
+.send{width: 30px;height:30px;background: url("../images/se.png")no-repeat;background-size: 100% auto;display: inline-block;vertical-align: middle}
+.btn{width: 100%;text-align: center;margin: 0 auto;bottom:10px;width: 30px;height: 30px;background: url("../images/pi.png")no-repeat;background-size: 100% auto}
+.file{opacity: 0;width: 50px;}
+.dialog{position: fixed;width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index: 1000;top:0;left: 0;bottom: 0;display: none}
+.mask{position: absolute;z-index: 1001;width: 90%;left:50%;margin-left: -45%;top:50%;margin-top: -20%;height: 225px;display: none}
+.buka{background: url("../images/bb.png")no-repeat center center;background-size: 100% auto;}
+.task_bg{background: url("../images/task.png")no-repeat center center;background-size: 100% auto;}
+.togg{background: url("../images/cc.png")no-repeat center center;background-size: 100% auto;}
+.fang_bg{background: url("../images/ff.png")no-repeat center center;background-size: 100% auto;}
+.new{background: url("../images/cj.png")no-repeat center center;background-size: 100% auto;}
+.member{background: url("../images/mm.png")no-repeat center center;background-size: 100% auto;}
+.marry{background: url("../images/ppe.png")no-repeat center center;background-size: 100% auto;}
+.rule{background: url("../images/gk.png")no-repeat center center;background-size: 100% auto;}
+.mob{background: url("../images/mob.png")no-repeat center center;background-size: 100% auto;}
+.activity{background: url("../images/hd.png")no-repeat center center;background-size: 100% auto;}
+.service{background: url("../images/kf.png")no-repeat center center;background-size: 100% auto;}
+.mask img.close{width: 40px;position: absolute;right:-10px;top:-10px}
+.mobile{width: 60%;margin: 0 auto;background:#9d856b;height: 30px;line-height: 30px;border-radius: 20px;position: absolute;top:50%;left: 50%;margin-left: -30% ;padding-left: 10px;color:#fff;font-weight: 700}
+.mask_content{position: absolute;top:50%;left: 10%;color:#fff;font-size: 18px;font-weight: 700;}
+.id_num{background: #3c3c3c;width: 150px;height: 30px;line-height:30px;font-weight: 700;padding-left: 10px;color:#fff;}
+.pic_list{width: 100%;margin-top: 53px;}
+.pic_list li{float: left;width: 50%;margin-bottom: 20px;text-align: center;position: relative}
+.pic_list li.last_li{width: 100%;}
+.pic_list li img{width: 100px;}
+.ff_list{margin-top: 40px;margin-left: 30px;}
+.ff_list li img{width:50px;vertical-align: middle}
+.ff_list li img.confirm{width: 80px;}
+.ff_list li.last_li,.invite_list li.last_li{text-align: center}
+.invite{font-size: 18px;color:#d3760e; margin: 40px 0 0 30px;font-weight: 700}
+.invite_list{margin-left: 30px;}
+.invite_list li{margin: 10px 0;}
+.invite_list li img{width: 80px;vertical-align: middle}
+.invite_title{color:#d3760e;font-weight: 700}
+.text_id{width: 100px;background: #333;border-radius: 10px;color:#fff;font-size: 14px;font-weight: 700;padding-left: 10px;}
+input::-webkit-input-placeholder,input:disabled{
+    color:#fff;
+    opacity: 1;
+}
+.flex{position: relative}
+.userId{position: absolute;bottom:0;color:#fff;font-size: 10px;overflow: hidden;width:50px;left:6px;text-align: center}
+.pic{position: absolute;left: 0;opacity: 0;}
+.swiper-container{width: 80%;margin-top: 13%;padding-bottom: 20px;}
+.swiper-slide{text-align: center}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom:0}
+.sure{width: 30%;position: absolute;bottom:20px;left: 50%;margin-left: -15%}
+.tips{font-size: 10px;color:#c1392b;margin-top: 50px;text-align: center}
+.member_list{text-align: center}
+.member_list li{float: left;text-align: center;width: 33%;}
+.member_list li img{width: 80px;display: block;margin: 10px auto}
+.member_list li.last_li{float: none;width: 100%}
+.member_list li.last_li .confirm{margin: 10px auto 0}
+.marry img.close{top:-5px;right: -6px;}
+.marry .avatar{top:70px;}
+.marry .game_name img{top:50px;}
+.marry .game_num{top:140px;}
+
+
+.radio{width: 30px;height: 30px;background: url("../images/img_select_3.png")no-repeat;background-size: 100% auto;vertical-align: middle}
+.radio:checked{width: 30px;height: 30px;background: url("../images/ch_03.png")no-repeat;background-size: 100% auto;vertical-align: middle}
+.head{width: 100%;background:#ed3d0e;color:#fff;height: 80px;line-height: 80px;position: relative }
+.back{width: 50px;height:50px;vertical-align: middle;display: inline-block;margin-left: 10px;background: url("../images/back.png")no-repeat;background-size: 100% auto}
+.head_title{display: inline-block;font-size: 18px;font-weight: 700}
+.num{display: inline-block;position: absolute;right:10px;background:#f26e47;border:1px solid #f15f38;border-radius: 20px;height: 30px;line-height: 30px;width:auto;text-align: center;top:20px;font-size: 16px;font-weight: 700;padding: 0 10px;}
+.group_bg{width: 100%;text-align: center;margin-top: 10px;position: relative}
+.group_bg img{width: 50%}
+.fangCard,.fMoney{color:#c23a2a;font-weight: 700;font-size: 14px;display: inline-block}
+.fangCard{width: 40%;margin-left: 10px;}
+.gains{width: 100%}
+.gr_title{text-align: center}
+.gr_title p{margin: 0 auto;width: 100px;height: 30px;background:#ab9d90;color: #fff;font-size: 16px;border-radius: 20px;line-height: 30px;text-align: center }
+.list{background: #f1d0af;width: 90%;margin: 10px auto;border-radius: 5px;height: 200px;overflow: auto;border:1px solid #fff;}
+.list_head{width: 100%;color:#f80003;font-size: 16px;padding: 20px 0;}
+.list_head span{text-align: center}
+.list li{padding: 5px 0}
+.list .id,.list .record,.list .gain{display: inline-block;text-align: center}
+.list .id{width: 30%;}
+.list .record{width: 50%;}
+.list .info{font-size: 12px;color:#999;}
+.id_card{color:#fff;}
+.name{color:#55c2fb;font-weight: 700}
+.list .gain{width: 13%;}
+.con{width: 100%;margin-top:10px;text-align: center}
+.con em{font-size: 24px;color:#ff0602;font-style: normal}
+.con span{color:#ff0602;font-size: 14px;margin-left: 10px;}
+.cash{display: inline-block;width: 50px;height: 30px;vertical-align: middle;background: url("../images/tx.png")no-repeat;margin-left:10px;background-size: 100% auto}
+.jiali{color:#da3d34}
+.user{width: 50px;float: left;margin-left: 10px;}
+.sign{display: inline-block;width: 40px;height: 30px;background: url("../images/qian.png")no-repeat;background-size: 100% auto;}
+.sigin{background: url("../images/img_Signed.png")no-repeat;background-size: 100% auto;}
+.notice{display: inline-block;position: absolute;color:#fff;font-size: 14px;width: 70%;background: rgba(255,255,255,0.1);text-align: center}
+.marquee{display: inline-block;width: 60%;vertical-align: middle}
+.group_id{color:#fff;position: absolute;left: 43%;top:10px;font-size: 15px;}
+.ad{margin-top: 30px;text-align: center}
+.ad img{width: 70%}
+.success{position: absolute;color:#fff;text-align: center;font-size: 14px;top:5px;width: 100%;}
+.center{height: auto;overflow: auto;margin-bottom: 100px;}
+.relBtn{display: block;width: 100%;height: 100%}
+@media (max-width: 320px){
+    .userId{bottom: 5px;}
+    .content{margin-top: 30px;}
+    .content ul li{margin:20px 0;}
+    .game_name img{top:30px}
+    .game_num{font-size: 14px;top:110px;width: 70px;}
+    .avatar{left: 80px;top:50px;}
+    .title{bottom:25%;}
+    .title ul li{margin: 0 5%;}
+    .user{width:40px; }
+    .sign{width: 40px;}
+    .header_right img{width: 30px;}
+    .group_id{top:8px;}
+    .member_list li img{margin: 5px auto;width: 60px;}
+    .marry .avatar img{width: 40px;}
+    .marry .avatar{top:80px;}
+    .mask img.close{top:0}
+    .marry img.close{top:9px;}
+    .marry .game_name img{top:60px;}
+    .success{top:2px;}
+}
+@media (min-width: 321px) and (max-width: 360px){
+    .content ul li{margin:20px 0;}
+    .title{bottom: 15%;}
+
+}
+@media (min-width: 380px) and (max-width: 760px){
+    .game_num{font-size: 18px;top:140px;}
+    .avatar{left: 120px;top:70px;}
+    .title{bottom:6%;left: 20px}
+}
+@media (max-height: 480px){
+    .content{margin-top: 10px;}
+    .content ul li{margin:10px 0;}
+}
+@media (min-width: 768px){
+    .header{height:75px;padding-top: 20px;}
+    .chat_header{height: 500px;}
+    .game_name img{top:70px}
+    .game_num{font-size: 28px;top:280px;width: 160px;}
+    .avatar{left: 200px;top:130px;}
+    .avatar img{width: 80px;}
+    .title{bottom:0;left: 60px;}
+    .title ul li img{width: 60px;}
+    .mask{height: 460px;}
+    .pic_list{margin-top: 140px;}
+    .pic_list li img{width: 200px;}
+    .group_id{top:20px;}
+    .success{top:10px;}
+}

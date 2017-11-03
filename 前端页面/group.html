@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>群主管理</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="background: #f5e3cf;">
+<div class="wrap">
+    <div class="head">
+        <div class="back">
+            <a href="javascript:;" class="relBtn"></a>
+        </div>
+        <div class="head_title">群主管理</div>
+        <div class="num">人数：</div>
+    </div>
+    <div class="group_bg">
+        <img src="images/yrs.png" alt="">
+    </div>
+    <div class="ad">
+        <img src="images/gg_03.png" alt="">
+    </div>
+</div>
+<!--按钮音乐-->
+<audio id="bgMusic" src="music/btn/ClickButton.mp3"></audio>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script>
+    $(function(){
+        var music = document.getElementById("bgMusic");
+        $('.relBtn').click(function(){
+            music.play();
+            setInterval(back,200);
+        });
+        function back(){
+            window.history.go(-1);
+        }
+    })
+</script>
+</body>
+</html>
